@@ -149,7 +149,7 @@ input[type="text"]::placeholder {
 }
 
 aside {
-    background-color: #95f897;
+    background-color: #419243;
     
     grid-column: 1/2;
     grid-row: 1/3;
@@ -158,6 +158,7 @@ aside {
 
     padding: 16px 8px;
 
+    font-family: cru-bold;
 }
 
 .sidebar-link-list {
@@ -167,13 +168,13 @@ aside {
 }
 
 .sidebar-link {
-    color: darkgreen;
+    color: #034d01;
     transition: all 0.4s;
 }
 
 .sidebar-link:hover {
     letter-spacing: 4px;
-    color: green;
+    color: darkgreen;
     font-size: 48px;
 }
 
@@ -191,14 +192,14 @@ aside {
     display: block;
     max-height: 96px;
     margin: 0 auto;
-    border: 2px solid darkgreen;
+    border: 2px solid #002b08;
     border-radius: 50%;
     user-select: none;
     -webkit-user-drag: none;
 }
 
 .logo-section h1 {
-    color: darkgreen;
+    color: #002b00;
     font-family: paddis-handwritten;
     font-size: 48px;
     user-select: none;
@@ -209,7 +210,7 @@ main {
     color: #583520;
     padding: 24px;
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 280px;
     grid-template-rows: min-content 1fr;
     gap: 32px;
 
@@ -253,6 +254,10 @@ button {
 
 button:hover {
     background-color: #0bbe0b;
+}
+
+button:active {
+    scale: 0.9;
 }
 
 .edit-button {
@@ -377,12 +382,28 @@ button:hover {
     border-radius: 8px;
     background-color: #fce8ca;
     box-shadow: 5px 5px 10px #8b654c;
+    font-size: 24px;
 
     display: grid;
     grid-template-rows: min-content;
+    text-align: center;
 }
 
+.saved-card h4 {
+    display: inline;
+    cursor: pointer;
+}
 
+.inline {
+    display: inline;
+}
+
+.divider {
+    width: 50%;
+    height: 1px;
+    background-color: #583520;
+    margin: 8px auto;
+}
 
 .credit {
     grid-column: 1/3;

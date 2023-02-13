@@ -1,0 +1,214 @@
+@font-face {
+    font-family: paddis-handwritten;
+    src: url(./Assets/fonts/PaddisHandwritten43Medium-x4em.ttf);
+}
+
+@font-face {
+    font-family: cru;
+    src: url(./Assets/fonts/CruChaipotHandWritten-doR7.ttf);
+}
+
+@font-face {
+    font-family: cru-bold;
+    src: url(./Assets/fonts/CruChaipotHandwrittenBlod-gAY6.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cru, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 82, 0);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 160px 1fr;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    grid-column: 2/3;
+    box-shadow: inset 6px 0 6px -6px #666;
+
+    padding: 16px 32px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header-top {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+input[type="text"] {
+    flex: 1;
+    background-color: #ececec;
+    outline: none;
+    border: none;
+    height: 32px;
+    border-radius: 16px;
+    padding: 2px 16px 0;
+    margin-right: 128px;
+    font-family: cru;
+    font-size: 28px;
+}
+
+input[type="text"]:focus {
+    outline: #555555 solid 1px;
+}
+
+input[type="text"]::placeholder {
+    color: #474747;
+    font-family: cru;
+    font-size: 28px;
+}
+
+.bell-icon {
+    height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.username {
+    cursor: pointer;
+    color: #363636;
+}
+
+.pfp {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    background-image: url(./Assets/slugcatButSeaGreen.png);
+    background-size: 80px 80px;
+    background-position: 43% 48%;
+}
+
+.pfp-small {
+    height: 40px;
+    width: 40px;
+}
+
+aside {
+    background-color: #95f897;
+    
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+
+    padding: 16px 8px;
+
+}
+
+.sidebar-link-list {
+    display: grid;
+    grid-auto-rows: 48px;
+    align-items: center;
+}
+
+.sidebar-link {
+    color: darkgreen;
+    transition: all 0.4s;
+}
+
+.sidebar-link:hover {
+    letter-spacing: 4px;
+    color: green;
+    font-size: 48px;
+}
+
+.sidebar-section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logo-section {
+    justify-self: center;
+
+}
+
+.logo {
+    display: block;
+    max-height: 96px;
+    margin: 0 auto;
+    border: 2px solid darkgreen;
+    border-radius: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.logo-section h1 {
+    color: darkgreen;
+    font-family: paddis-handwritten;
+    font-size: 48px;
+    user-select: none;
+}
+
+main {
+    background-color: #fdf3e5;
+    color: #583520;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: min-content 1fr;
+    column-gap: 32px;
+
+    box-shadow: inset 10px 8px 10px -10px #5a3217;
+}
+
+main h1 {
+    font-size: 48px;
+}
+
+.projects {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.projects h1 {
+    grid-column: 1/-1;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 32px;
+}
+
+.card {
+    padding: 16px;
+    border: 2px solid #582020;
+    border-radius: 8px;
+    background-color: #fff8f4;
+    box-shadow: inset 10px 10px 10px -10px #8b654c;
+}
+
+.card h2 {
+    font-size: 32px;
+}
+
+.card p {
+    font-size: 28px;
+}

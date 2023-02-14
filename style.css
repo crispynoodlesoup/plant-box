@@ -322,6 +322,8 @@ button:active {
 
 .like {
     transition: all 0.25s;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .like:hover {
@@ -344,6 +346,8 @@ button:active {
 .collab {
     transition: all 0.25s;
     scale: 1.1;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .collab:hover {
@@ -366,6 +370,8 @@ button:active {
 .share {
     scale: 0.95;
     transition: scale 0.25s;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .share:hover {
